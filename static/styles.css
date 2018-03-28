@@ -1,0 +1,79 @@
+.button {
+    display: inline-block;
+    border: 1px solid #333;
+    color: #333;
+    padding: 2px 5px;
+	background: #fff;
+	font-family: Arial;
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+.button,
+.button:link,
+.button:hover,
+.button:focus,
+.button:visited {
+    text-decoration: none;
+}
+
+.button:hover {
+	background: #eee;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.item {
+	max-width: 30%;
+	padding: 10px;
+	border: 2px dotted #000;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.item__title {
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.item__text {
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    flex-direction: column;
+    vertical-align: middle;
+    margin: 20px;
+}
+
+form .row {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+form .row label {
+	font-size: 18pt;
+	font-weight: bold;
+	display: block;
+}
+
+form .row input[type="text"],
+form .row textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+	min-width: 250px;
+}
+
+form .row textarea {
+	min-height: 100px;
+}
